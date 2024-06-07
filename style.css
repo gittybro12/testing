@@ -1,0 +1,77 @@
+body{
+    background: url(img/image.png);
+    background-repeat: no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+}
+#open-btn{
+    position: absolute;
+    top:80%;
+    left: 10%;
+    width: 350px;
+    font-size: 2rem;
+    background-color: transparent;
+    color: white;
+    border: solid 2px white;
+    border-radius: 10px;
+  padding: px;
+    box-shadow: 0 0 3px black;
+}
+#open-btn:hover{
+    background-color: white;
+    color: black;
+}
+
+#model{
+    position: absolute;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 100px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    animation-name: animatemodel;
+    animation-duration: .4s;
+
+}
+
+#close{
+    font-size: 3rem;
+
+}
+#close:hover{
+    cursor: pointer;
+    font-size: 3rem;
+    color: red;
+    font-weight: 600;
+}
+
+#model-cont{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0,0, .2);
+    
+}
+
+@keyframes animatemodel{
+    from{
+        top: -300px;
+        opacity: 0;
+    }
+    to{
+        top: 50%;
+        opacity: ;
+    }
+}
